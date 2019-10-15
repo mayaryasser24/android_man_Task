@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <RelativeLayout tools:context=".MainActivity"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Hello Android Man"
+        style="@style/titleStyle"
+        android:id="@+id/titleTxtView"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        style="@style/commonStyle"
+        android:id="@+id/haderLinearLayout"
+        android:orientation="vertical"
+        android:layout_below="@id/titleTxtView">
+
+    <View
+        style="@style/head_boxTheme"
+        android:id="@+id/hari"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/small_margine"
+        style="@style/commonStyle"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/small_margine">
+
+    <View
+        style="@style/eye_boxTheme"
+        android:id="@+id/leftEye"
+        android:layout_marginLeft="@dimen/mid_margine"/>
+
+    <View
+        style="@style/eye_boxTheme"
+        android:id="@+id/RightEye"
+        android:layout_marginLeft="@dimen/mid_margine"/>
+
+</LinearLayout>
+
+    <View
+        style="@style/head_boxTheme"
+        android:id="@+id/mouth"/>
+
+</LinearLayout>
+
+    <!--Mid part -->
+
+
+
+    <LinearLayout
+        style="@style/commonStyle"
+        android:id="@+id/midLinera"
+        android:orientation="horizontal"
+        android:layout_below="@id/haderLinearLayout">
+
+    <View
+        android:layout_width="0dp"
+        style="@style/arm_boxTheme"
+        android:layout_margin="@dimen/small_margine"
+        android:layout_weight="1"/>
+
+    <View
+        android:layout_width="0dp"
+        style="@style/mid_boxTheme"
+        android:layout_margin="@dimen/small_margine"
+        android:layout_weight="4"/>
+
+    <View
+        android:layout_width="0dp"
+        style="@style/arm_boxTheme"
+        android:layout_margin="@dimen/small_margine"
+        android:layout_weight="1"/>
+
+</LinearLayout>
+
+    <!--leg-->
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        style="@style/commonStyle"
+        android:id="@+id/footerLinear"
+        android:orientation="horizontal"
+        android:layout_below="@id/midLinera">
+
+
+    <RelativeLayout
+        style="@style/commonStyle">
+
+    <View
+        android:layout_centerHorizontal="true"
+        style="@style/leg_boxTheme"
+        android:id="@+id/leglft"/>
+
+    <View
+        style="@style/foot_boxTheme"
+        android:layout_below="@id/leglft"
+        android:layout_margin="@dimen/small_margine"/>
+
+</RelativeLayout>
+
+
+    <RelativeLayout
+        style="@style/commonStyle">
+
+    <View
+        android:layout_centerHorizontal="true"
+        style="@style/leg_boxTheme"
+        android:id="@+id/legrigt"/>
+
+    <View
+        style="@style/foot_boxTheme"
+        android:layout_below="@id/legrigt"
+        android:layout_margin="@dimen/small_margine"/>
+
+</RelativeLayout>
+
+</LinearLayout>
+
+</RelativeLayout>
